@@ -39,7 +39,7 @@
 <div id="details">
 	<div id="loading" style="display:none">
 	<div class="lds-roller" style="display:inline;"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-	<p  style="display:inline;color:#88b378;margin-left:10vw;font-size:400%;">Loading</p>
+	<p  style="display:inline;color:#88b378;margin-left:10vw;font-size:400%;">Loading Details</p>
 </div>
 </div>
 	<br/>
