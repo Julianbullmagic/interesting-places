@@ -36,10 +36,11 @@
     32 => 'Siberfx\\Leafletjs\\ServiceProvider',
     33 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',
     34 => 'Bagusindrayana\\LaravelMaps\\LaravelMapsServiceProvider',
-    35 => 'App\\Providers\\AppServiceProvider',
-    36 => 'App\\Providers\\AuthServiceProvider',
-    37 => 'App\\Providers\\EventServiceProvider',
-    38 => 'App\\Providers\\RouteServiceProvider',
+    35 => 'Collective\\Html\\HtmlServiceProvider',
+    36 => 'App\\Providers\\AppServiceProvider',
+    37 => 'App\\Providers\\AuthServiceProvider',
+    38 => 'App\\Providers\\EventServiceProvider',
+    39 => 'App\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (

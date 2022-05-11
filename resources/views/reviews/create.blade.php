@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="/css/app.css" rel="stylesheet">
+
   <div class="formtwo">
     <h1>Create Review</h1>
     {!! Form::open(['action' => 'App\Http\Controllers\ReviewsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}

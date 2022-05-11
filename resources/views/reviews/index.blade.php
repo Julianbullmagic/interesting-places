@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+<link href="/css/app.css" rel="stylesheet">
+
     <h1>Reviews</h1>
     @if(count($reviews) > 0)
         @foreach($reviews as $review)

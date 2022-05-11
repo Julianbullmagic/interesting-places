@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="/css/app.css" rel="stylesheet">
+
     <h1>Edit Review</h1>
     {!! Form::open(['action' => ['App\Http\Controllers\ReviewsController@update', $review->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         <div class="form-group">
