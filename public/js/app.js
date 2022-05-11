@@ -4,8 +4,6 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('leaflet/dist/leaflet.js');
-
 window.Vue = require('vue').default;
 
 /**

@@ -2,7 +2,6 @@
 @extends('layouts.app')
 @section('content')
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
-<!-- Make sure you put this AFTER Leaflet's CSS -->
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div>
@@ -28,7 +27,7 @@
 					<div style="display:inline" name="category" id="category">
 					</div>
 					<p style="display:inline" id="categorydisplay"></p>
-					<p style="display:inline">set category</p>
+					<h4 style="display:inline">set category</h4>
 				</div>
 				</div>
 					<h3 id="mapinfo">Radius in meters, min 100, max 30000. Right click map to set center marker</h3>
@@ -287,15 +286,18 @@ function updateCategories(){
 		let categorydisplay = document.getElementById('categorydisplay');
 		categorydisplay.textContent=selectedcategory
 		select.value=selectedcategory
+		sessionStorage.setItem('category',selectedcategory)
+
 		updateCategories()
 		getPlaces()
 		console.log(selectedcategory);
 }
+let option = document.createElement('option');
+select.appendChild(option);
 	for (let category of categories){
 		let option = document.createElement('option');
 		option.innerText = category
 		option.value = category
-		sessionStorage.setItem('category',selectedcategory)
 		select.appendChild(option);
 	}
 	categoryoptions.replaceChildren(select)
